@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Radiance
+  </title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container" id="hero">
+    <div class="navbar">
+      <img src="images/logo.png" class="logo" alt="logo">
+      <div class="user">
+        <button type="button" name="button">Explore</button>
+        <img src="images/user.png" alt="user">
+      </div>
+    </div>
+    <div class="left-bar">
+      <div class="info">
+        <h1>Discover</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.</p>
+        <input type="text" placeholder="search">
+      </div>
+    </div>
+    <div class="slider">
+      <img src="images/left-arrow.png" alt="" id="prev">
+      <div class="preview">
+        <img src="images/small1.png" class=" active thumbnail " alt="">
+        <img src="images/small2.png" class="thumbnail " alt="">
+        <img src="images/small3.png" class="thumbnail " alt="">
+        <img src="images/small4.png" class="thumbnail " alt="">
+        <img src="images/small5.png" class="thumbnail " alt="">
+      </div>
+      <img src="images/right-arrow.png" alt="" id="next" >
+    </div>
+  </div>
+  <script type="text/javascript">
+    const next = document.getElementById("next");
+    const prev = document.getElementById("prev");
+    const thumbnail = document.getElementsByClassName("thumbnail");
+    const hero = document.getElementById("hero");
+
+    var backgroundImg = new Array(
+      "images/bg1.png",
+      "images/bg2.png",
+      "images/bg3.png",
+      "images/bg4.png",
+      "images/bg5.png"
+    )
+next.click=function(){
+  hero.style.backgroundImage="url("backgroundImg[]")"
+}
+  </script>
+</body>
+
+</html>
